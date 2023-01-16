@@ -1,0 +1,7 @@
+git clone git@github.com:a464442700/mybatis_demo.git
+git remote add origin git@github.com:a464442700/mybatis_demo.git
+下载
+git fetch origin
+git merge origin/master
+上传
+git push -u origin master
