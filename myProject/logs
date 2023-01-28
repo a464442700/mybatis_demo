@@ -1,0 +1,14 @@
+2023-01-28 14:52:58,103 DEBUG [main] org.apache.ibatis.logging.LogFactory [LogFactory.java : 105] Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2023-01-28 14:52:58,130 DEBUG [main] o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 363] PooledDataSource forcefully closed/removed all connections.
+2023-01-28 14:52:58,131 DEBUG [main] o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 363] PooledDataSource forcefully closed/removed all connections.
+2023-01-28 14:52:58,131 DEBUG [main] o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 363] PooledDataSource forcefully closed/removed all connections.
+2023-01-28 14:52:58,131 DEBUG [main] o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 363] PooledDataSource forcefully closed/removed all connections.
+2023-01-28 14:52:58,194 DEBUG [main] o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 137] Opening JDBC Connection
+2023-01-28 14:52:58,676 DEBUG [main] o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 434] Created connection 1865859824.
+2023-01-28 14:52:58,677 DEBUG [main] o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 101] Setting autocommit to false on JDBC Connection [oracle.jdbc.driver.T4CConnection@6f36c2f0]
+2023-01-28 14:52:58,681 DEBUG [main] test.selectStudentsid [BaseJdbcLogger.java : 137] ==>  Preparing: SELECT * FROM students
+2023-01-28 14:52:58,801 DEBUG [main] test.selectStudentsid [BaseJdbcLogger.java : 137] ==> Parameters: 
+2023-01-28 14:52:58,888 DEBUG [main] test.selectStudentsid [BaseJdbcLogger.java : 137] <==      Total: 4
+2023-01-28 14:52:58,899 DEBUG [main] o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 123] Resetting autocommit to true on JDBC Connection [oracle.jdbc.driver.T4CConnection@6f36c2f0]
+2023-01-28 14:52:58,899 DEBUG [main] o.a.i.t.jdbc.JdbcTransaction [JdbcTransaction.java : 91] Closing JDBC Connection [oracle.jdbc.driver.T4CConnection@6f36c2f0]
+2023-01-28 14:52:58,900 DEBUG [main] o.a.i.d.pooled.PooledDataSource [PooledDataSource.java : 391] Returned connection 1865859824 to pool.
