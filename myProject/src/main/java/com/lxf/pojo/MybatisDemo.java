@@ -1,5 +1,6 @@
 package com.lxf.pojo;
 
+import com.lxf.mapper.StudentsMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -15,8 +16,10 @@ public class MybatisDemo {
         InputStream inputStream = Resources.getResourceAsStream(resource);
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
         SqlSession sqlSession=sqlSessionFactory.openSession();
-        System.out.println(sqlSession);//这一步成功表示成功连接数据库并新建一个会话
-        List<Students> students= sqlSession.selectList("test.selectStudentsid");//在此会话中执行SQL语句
+      //  System.out.println(sqlSession);//这一步成功表示成功连接数据库并新建一个会话
+      //  List<Students> students= sqlSession.selectList("test.selectStudentsid");//在此会话中执行SQL语句
+        StudentsMapper studentsMapper=sqlSession.getMapper(StudentsMapper.class);
+        List<Students> students=studentsMapper.selectStudentsid();
         System.out.println(students);
         sqlSession.close();
     }
