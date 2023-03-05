@@ -1,5 +1,6 @@
 package com.lxf.pojo;
 
+
 import com.lxf.mapper.StudentsMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -21,6 +22,7 @@ public class MybatisDemo {
         StudentsMapper studentsMapper=sqlSession.getMapper(StudentsMapper.class);
         List<Students> students=studentsMapper.selectStudentsid();
         System.out.println(students);
+
         sqlSession.close();
     }
 }

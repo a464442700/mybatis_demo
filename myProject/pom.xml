@@ -14,18 +14,13 @@
     </properties>
 <dependencies>
 
-    <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>4.11</version>
-        <scope>test</scope>
-    </dependency>
+
     <dependency>
         <groupId>com.oracle</groupId>
         <artifactId>ojdbc</artifactId>
         <version>8</version>
         <scope>system</scope>
-        <systemPath>d:/Home/Learn/Mybatis/mybatis_demo/myProject/src/lib/ojdbc8.jar</systemPath>
+        <systemPath>C:/Learn/Java/SSM/Mybatis/project/mybatis_demo/myProject/src/lib/ojdbc8.jar</systemPath>
     </dependency>
 
     <dependency>
@@ -33,6 +28,7 @@
         <artifactId>mybatis</artifactId>
         <version>3.5.5</version>
     </dependency>
+
     <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>

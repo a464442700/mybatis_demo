@@ -3,7 +3,19 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.lxf.mapper.StudentsMapper">
-    <select id="selectStudentsid"  resultType="com.lxf.pojo.Students">
-        SELECT * FROM students
+    <select id="selectStudentsid" resultType="Students">
+        SELECT *
+        FROM students
     </select>
+    <select id="selectStudentid" resultType="com.lxf.pojo.Students">
+        select *
+        from students
+        where student_id = #{studentid}
+    </select>
+
+
+    <select id="SelectStudentAll" resultType="com.lxf.pojo.Students">
+select* from students
+    </select>
+
 </mapper>

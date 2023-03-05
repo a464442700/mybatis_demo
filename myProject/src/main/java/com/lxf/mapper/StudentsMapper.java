@@ -6,5 +6,7 @@ import java.util.List;
 
 public interface StudentsMapper {
    List<Students> selectStudentsid();
+   Students selectStudentid(int studentID);
 
+  List<Students>  SelectStudentAll();
 }
