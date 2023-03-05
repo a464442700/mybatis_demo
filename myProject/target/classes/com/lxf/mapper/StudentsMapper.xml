@@ -12,8 +12,12 @@
         from students
         where student_id = #{studentid}
     </select>
-    <select id="SelectStudentAll" resultType="com.lxf.pojo.Students">
-select* from students
+
+  <resultMap id="SelectStudentAllMap" type="students">
+    <result column="student_id" property="studentId"/>
+  </resultMap>
+    <select id="SelectStudentAll" resultMap="SelectStudentAllMap">
+select * from students
     </select>
 
 </mapper>

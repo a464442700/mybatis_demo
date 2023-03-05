@@ -1,18 +1,18 @@
 package com.lxf.pojo;
 
 public class Students {
-    private Integer student_id;
+    private Integer studentId;
     private String student_name;
     private String class_name;
     private String sex;
     private Integer age;
   //按住alter+insert 选择set get 方法可以自动生成
-    public Integer getStudent_id() {
-        return student_id;
+    public Integer getstudentId() {
+        return studentId;
     }
 
-    public void setStudent_id(Integer student_id) {
-        this.student_id = student_id;
+    public void setstudentId(Integer studentId) {
+        this.studentId = studentId;
     }
 
     public String getStudent_name() {
@@ -50,7 +50,7 @@ public class Students {
     @Override
     public String toString() {
         return "Students{" +
-                "student_id=" + student_id +
+                "studentId=" + studentId +
                 ", student_name='" + student_name + '\'' +
                 ", class_name='" + class_name + '\'' +
                 ", sex='" + sex + '\'' +
