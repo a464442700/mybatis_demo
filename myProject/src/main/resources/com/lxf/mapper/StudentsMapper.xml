@@ -15,10 +15,18 @@
 
     <resultMap id="SelectStudentAllMap" type="students">
         <result column="student_id" property="studentId"/>
+
     </resultMap>
+
     <select id="SelectStudentAll" resultMap="SelectStudentAllMap">
         select *
-        from students
+        from students where student_id=#{id}
+    </select>
+
+    <select id="SelectStudentAllById" resultMap="SelectStudentAllMap">
+
+        select *
+        from students where student_id=#{studentId}
     </select>
 
 </mapper>

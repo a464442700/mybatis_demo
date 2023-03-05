@@ -1,6 +1,9 @@
 package com.lxf.pojo;
 
 public class Students {
+    public  Students(Integer id,String name){
+        this.studentId=id;
+    }
     private Integer studentId;
     private String student_name;
     private String class_name;
