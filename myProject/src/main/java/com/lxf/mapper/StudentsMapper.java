@@ -21,4 +21,5 @@ public interface StudentsMapper {
 
     void  InsertOneStudent(Students students);
 
+    void  UpdateOneStudent(Students students);
 }

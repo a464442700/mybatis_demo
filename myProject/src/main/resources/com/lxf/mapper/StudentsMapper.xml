@@ -9,6 +9,28 @@
                , #{sex}, #{age})
 
     </insert>
+    <update id="UpdateOneStudent">
+        update students
+        <set>
+            <if test="student_name != null">
+                student_name=#{student_name},
+            </if>
+            <if test="class_name != null">
+                class_name=#{class_name},
+            </if>
+            <if test="sex != null">
+                sex=#{sex},
+            </if>
+            <if test="age != null">
+                age=#{age},
+            </if>
+        </set>
+        <where>
+            <if test="studentId != null">
+                and student_id=#{studentId}
+            </if>
+        </where>
+    </update>
 
 
     <select id="selectStudentsid" resultType="Students">
