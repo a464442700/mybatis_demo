@@ -17,5 +17,8 @@ public interface StudentsMapper {
     List<Students> SelectStudentAllById(Students students);
 
     List<Students> SelectStudentAllById(Map studentsMap);
+    List<Students> SelectDynamicStudent(Map studentsMap);
+
+    void  InsertOneStudent(Students students);
 
 }

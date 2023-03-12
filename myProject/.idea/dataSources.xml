@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Oracle" uuid="2bd4909d-2448-48b7-97c9-fc0c2875693c">
+    <data-source source="LOCAL" name="@lxf123.asuscomm.com" uuid="2bd4909d-2448-48b7-97c9-fc0c2875693c">
       <driver-ref>oracle.19</driver-ref>
       <synchronize>true</synchronize>
       <auto-commit>false</auto-commit>
       <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
-      <jdbc-url>jdbc:oracle:thin:@47.99.191.156:1521:ORCL</jdbc-url>
+      <jdbc-url>jdbc:oracle:thin:@lxf123.asuscomm.com:1521:PROD</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="Oracle [2]" uuid="7df5e993-de18-49f7-a104-e18620064ecf">
+      <driver-ref>oracle.19</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@lxf123.asuscomm.com:1521:PROD</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
