@@ -32,6 +32,15 @@
         </where>
     </update>
 
+    <delete id="DeleteStudents">
+
+        delete from students where student_id in
+        <foreach collection="ids" open="(" close=")" separator="," item="id">
+            #{id}
+        </foreach>
+
+    </delete>
+
 
     <select id="selectStudentsid" resultType="Students">
         SELECT *
